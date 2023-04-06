@@ -5,7 +5,7 @@ public class Exercicio2 {
 		int nasc,atual,idatual,idpos;
 		System.out.print("ano de nascimento: ");
 		nasc = bot.nextInt();
-	    System.out.print("em que ano estamos?");
+	    	System.out.print("em que ano estamos?");
 		atual = bot.nextInt();
 		idatual= atual-nasc;
 		idpos=idatual+50;
