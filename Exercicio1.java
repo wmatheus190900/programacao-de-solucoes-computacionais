@@ -1,8 +1,7 @@
 import java.util.Scanner;
-public class MinhaPrimeiraClasse {
+public class Exercicio1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		double nota1,nota2,nota3,media;
 		Scanner bot= new Scanner(System.in);
 		System.out.print("nota 1: ");
