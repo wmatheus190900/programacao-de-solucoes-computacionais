@@ -9,6 +9,6 @@ public class Exercicio3 {
 		valord=bot.nextFloat();
 		valorr= valord*cotr;
 		System.out.print("voce tem "+ valorr + " reais.");
-	    bot.close();
+	    	bot.close();
 	}
 }
