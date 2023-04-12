@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class exercicio4lis2 {
+public class Exercicio4Lis2 {
     public static void main(String[]aStrings){
     double altura,peso,imc;
     Scanner bot=new Scanner(System.in);
