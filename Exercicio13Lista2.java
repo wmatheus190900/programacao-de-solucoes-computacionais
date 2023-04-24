@@ -31,5 +31,7 @@ public class Exercicio13Lista2 {
                 System.out.println("R$"+ total);
             }
         }
+        bot.close();
     }
 }
+
