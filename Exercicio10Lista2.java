@@ -4,8 +4,7 @@ public class Exercicio10Lista2 {
         Scanner bot=new Scanner(System.in);
         int num1,num2,num3;
         int digite;
-        System.out.print("escolha:");
-        System.out.println("\n1 - Somar os dois números.\n2 - Multiplicar os dois números.\n3 - Subtrair o número maior pelo número menor.\n4 - Dividir o primeiro número pelo segundo.");
+        System.out.print("escolha:\n1 - Somar os dois números.\n2 - Multiplicar os dois números.\n3 - Subtrair o número maior pelo número menor.\n4 - Dividir o primeiro número pelo segundo.");
         digite=bot.nextInt();
         System.out.print("Escolha 2 numeros");
         num1=bot.nextInt();
@@ -37,7 +36,7 @@ public class Exercicio10Lista2 {
                         num3=num1/num2;
                         System.out.println(num1 + "/" + num2 + " = " + num3);
                 }
-                break;      
+                break;
         }
         bot.close();
     }
