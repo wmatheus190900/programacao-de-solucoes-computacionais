@@ -2,29 +2,23 @@ package Lista5;
 import java.util.Scanner;
 public class Exercicio4 {
     public static void main(String[] args) {
-        int maiorNum = 0;
-		int menorNum = 1000000;
-        Scanner bot= new Scanner(System.in);
-		for (;;) {
-			
-			System.out.println("Informe um numero: ");
-			int num = bot.nextInt();
-
-			if (num > 0) {
-				
-			} else {
+		int idade;
+		int somaIdade=0,quantNum=0;
+		double mediaIdade;
+		Scanner bot=new Scanner(System.in);
+			for(; ;){
+			System.out.println("Digite a idade:");
+			idade=bot.nextInt();
+			if(idade<=0){
 				break;
-			}
-			if (num > maiorNum) {
-				maiorNum = num;
-			}
-			if (num < menorNum) {
-				menorNum = num;
+			}else{
+				somaIdade+=idade;
+				quantNum++;
 			}
 		}
-		System.out.println("Maior Numero informado: " + maiorNum);
-		System.out.println("Menor Numero informado: " + menorNum);
-        bot.close();
-    }
+		mediaIdade=somaIdade/quantNum;
+		System.out.println("média: " + mediaIdade);	
+		bot.close();
+	}
     
 }
