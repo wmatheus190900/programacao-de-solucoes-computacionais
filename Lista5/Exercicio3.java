@@ -6,11 +6,15 @@ public class Exercicio3 {
         int n,fatorial=1;
         System.out.println("escolha um número: ");
         n=bot.nextInt();
+        if(n>0){
 
-        for(int i=n;i>=1;i--){
-            fatorial*=i;
-        }        
-        System.out.println(n +"!" + "=" + fatorial);
+            for(int i=n;i>=1;i--){
+                fatorial*=i;
+            }        
+            System.out.println(n +"!" + "=" + fatorial);
+        }else{
+            System.out.println("número invalido!");
+        }
     bot.close();
     }
 }
