@@ -11,6 +11,7 @@ public class Exercicio2 {
         for(int i=primeiro;i<limite;i++){
             System.out.println(i);
         }
+    bot.close();    
     }
     
 }
