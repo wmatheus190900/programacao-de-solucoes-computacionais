@@ -18,7 +18,7 @@ public class Exercicio4 {
 		}
 		mediaIdade=somaIdade/quantNum;
 		System.out.println("média: " + mediaIdade);	
-		bot.close();
+		bot.close();		
 	}
     
 }
