@@ -21,5 +21,5 @@ public class Exercicio1 {
         bot.close();
         }
     }
+    
 }
-
