@@ -6,7 +6,8 @@ public class Exercicio4 {
 		int somaIdade=0,quantNum=0;
 		double mediaIdade;
 		Scanner bot=new Scanner(System.in);
-			for(; ;){
+		try{	
+		for(; ;){
 			System.out.println("Digite a idade:");
 			idade=bot.nextInt();
 			if(idade<=0){
@@ -17,8 +18,10 @@ public class Exercicio4 {
 			}
 		}
 		mediaIdade=somaIdade/quantNum;
-		System.out.println("média: " + mediaIdade);	
-		bot.close();		
+		System.out.println("média: " + mediaIdade);
+		}finally{	
+		bot.close();
+		}
 	}
     
 }

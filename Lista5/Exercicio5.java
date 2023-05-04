@@ -4,7 +4,8 @@ public class Exercicio5 {
     public static void main(String[] args) {
         int maiorNum = 0;
 		int menorNum = 1000000;
-        Scanner bot= new Scanner(System.in);
+        Scanner bot = new Scanner(System.in);
+		try{
 		for (;;) {
 			
 			System.out.println("Informe um numero: ");
@@ -24,6 +25,8 @@ public class Exercicio5 {
 		}
 		System.out.println("Maior Numero informado: " + maiorNum);
 		System.out.println("Menor Numero informado: " + menorNum);
-        bot.close();
+		}finally{
+		bot.close();
+		}
     }
 }

@@ -11,6 +11,7 @@ public class Exercicio8 {
             potencia*=base;
         }
         System.out.println(base + " ^ " + expoente + " = " + potencia);
+        bot.close();
     }
     
 }
