@@ -15,5 +15,6 @@ public class Exercicio6 {
         }
         media=somaIdade/numPessoas;
         System.out.println("media de idades: " + media);
+        bot.close();
     }
 }
