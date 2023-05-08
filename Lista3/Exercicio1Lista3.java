@@ -2,55 +2,43 @@ package Lista3;
 import java.util.Scanner;
 public class Exercicio1Lista3 {
     public static void main(String[] args) {
+        int totalNota=0,notaFinal,maiorNota=0,menorNota=100,faltas,quant90=0,quantRepN=0,quantRepF=0,numAlunos=0;
+        double mediaTotal;
         Scanner bot=new Scanner(System.in);
-        int[] notas = new int[30];
-        int[] faltas = new int[30];
-        int numAlunos = 0;
-        int reprovadosNotas = 0;
-        int reprovadosFaltas = 0;
-        int maiorNota=0;
-        int menorNota=100;
-        int mais90 = 0;
-        int mediaNotas=0;
-        int somanotas=0;
-
-        while(numAlunos<30){
-        System.out.println("Digite a nota final e o número de faltas de cada aluno (digite uma nota negativa para encerrar):");
-            int nota = bot.nextInt();
-            if(nota<0){
-                break;
-            }
-            int falta = bot.nextInt();
-
-            notas[numAlunos] = nota;
-            faltas[numAlunos] = falta;
+        do{
+            System.out.println("nota final: ");
+            notaFinal=bot.nextInt();
             numAlunos++;
-            if (nota >= 90) {
-                mais90++;
-            } else if (nota < 70) {
-                reprovadosNotas++;
+            if(notaFinal<0){
+                break;
+            }else{
+            System.out.println("faltas:");
+            faltas=bot.nextInt();
+            totalNota+=notaFinal;
+            if(notaFinal>90){
+                quant90++;
             }
-            if (falta >= 20) {
-                reprovadosFaltas++;
+            else if(notaFinal<70){
+                quantRepN++;
             }
-            if (nota > maiorNota) {
-                maiorNota = nota;
+            if(notaFinal>maiorNota){
+                maiorNota=notaFinal;
             }
-            if (nota < menorNota) {
-                menorNota = nota;
-            }         
-            somanotas+=nota;
-        }
-        
-        System.out.println("quantidade de alunos com a nota maior que 90: " + mais90);
-        System.out.println("reprovaodos por nota: " + reprovadosNotas);
-        System.out.println("reprovaodos por falta: " + reprovadosFaltas);
-        System.out.println("maior nota: " + maiorNota);
-        System.out.println("Menor nota: " + menorNota);
-        mediaNotas=somanotas/numAlunos;
-        System.out.println("Média das Notas: " + mediaNotas);
-        bot.close();
-
+            if(notaFinal<menorNota){
+                menorNota=notaFinal;
+            }
+            if(faltas>20){
+                quantRepF++;
+            }
+            }
+        }while(notaFinal>=0);
+        System.out.println("Quantidade de alunos com nota>=90: "+ quant90);
+        System.out.println("Quantidade de alunos reprovados por nota: "+ quantRepN);
+        System.out.println("Quantidade de alunos reprovados por falta: " + quantRepF);
+        System.out.println("Maior nota:"+ maiorNota);
+        System.out.println("Menor nota:"+ menorNota);
+        mediaTotal=totalNota/numAlunos;
+        System.out.println("média total da turma: "+ mediaTotal);
     }
 }
 
