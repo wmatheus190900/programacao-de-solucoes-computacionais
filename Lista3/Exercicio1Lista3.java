@@ -39,6 +39,7 @@ public class Exercicio1Lista3 {
         System.out.println("Menor nota:"+ menorNota);
         mediaTotal=totalNota/numAlunos;
         System.out.println("média total da turma: "+ mediaTotal);
+        bot.close();
     }
 }
 
