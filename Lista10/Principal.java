@@ -13,7 +13,7 @@ public class Principal {
 			for(int i=0;i<vetor.length;i++) {
 				vetor[i]=bot.nextInt();
 			}
-			System.out.println("selecione um dos métodos de ordenação do vetor(1-bolha;2-seleção;3-inserção;)");
+			System.out.println("selecione um dos métodos de ordenação do vetor(1-bolha;2-seleção;3-inserção;4-quiksort)");
 			opcao=bot.nextInt();
 			switch(opcao) {
 				case 1:
@@ -28,6 +28,8 @@ public class Principal {
 				metodos.insercao(vetor);
 				System.out.println("Vetor ordenadot: " + Arrays.toString(vetor));
 				break;
+				case 4:
+				metodos.quicksort(vetor,0,vetor.length-1);
 			}
 			System.out.println("Deseja continuar");
 			continuacao=bot.next();
